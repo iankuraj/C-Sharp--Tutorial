@@ -17,7 +17,7 @@ namespace PareshSir
         {
             MyDelegate obj1 = new MyDelegate(Add);
 
-            obj1(10, 20); //It is method
+            obj1(20, 10); //It is method
         }
     }
 }
