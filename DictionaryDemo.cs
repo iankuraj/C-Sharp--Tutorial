@@ -7,18 +7,20 @@ using System.Threading.Tasks;
 
 namespace PareshSir
 {
-    internal class ArrayListDemo2
+    internal class DictionaryDemo
     {
-        public static void Main()
+        static void Main()
         {
-            SortedList S = new SortedList();
+            Dictionary<string, string> S = new Dictionary<string, string>();
             S.Add("22SOECE11172", "Ankit");
             S.Add("22SOECE11170", "Raj");
             S.Add("22SOECE11190", "Sheilendra");
             S["22SOECE11170"] = "Anku";
 
-            for (int i = 0; i < S.Count; i++)
-                Console.WriteLine(S.GetByIndex(i));
+            ICollection<string> c = S.Keys;
+            foreach (string t in c)
+                Console.WriteLine(S[t]);
+
             Console.ReadKey();
         }
     }

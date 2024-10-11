@@ -7,19 +7,20 @@ using System.Threading.Tasks;
 
 namespace PareshSir
 {
-    internal class ArrayListDemo2
+    internal class SortedListDemo2
     {
-        public static void Main()
+        static void Main()
         {
-            SortedList S = new SortedList();
+            Hashtable S = new Hashtable();
             S.Add("22SOECE11172", "Ankit");
             S.Add("22SOECE11170", "Raj");
             S.Add("22SOECE11190", "Sheilendra");
             S["22SOECE11170"] = "Anku";
 
-            for (int i = 0; i < S.Count; i++)
-                Console.WriteLine(S.GetByIndex(i));
-            Console.ReadKey();
+            ICollection c = S.Keys;
+            foreach (string t in c)
+                Console.WriteLine(S[t]);
+            Console.WriteLine();
         }
     }
 }

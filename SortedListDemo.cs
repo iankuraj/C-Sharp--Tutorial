@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace PareshSir
 {
-    internal class ArrayListDemo2
+    internal class SortedListDemo
     {
-        public static void Main()
+
+        static void Main()
         {
             SortedList S = new SortedList();
             S.Add("22SOECE11172", "Ankit");
